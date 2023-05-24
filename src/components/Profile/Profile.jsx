@@ -3,13 +3,11 @@ import css from './Profile.module.css';
 
 export const Profile = user => {
   const {
-    info: {
-      avatar,
-      username,
-      tag,
-      location,
-      stats: { followers, views, likes },
-    },
+    avatar,
+    username,
+    tag,
+    location,
+    stats: { followers, views, likes },
   } = user;
   return (
     <div className={css.profile}>
@@ -39,17 +37,12 @@ export const Profile = user => {
     </div>
   );
 };
-
-Profile.propTypes = {
-  info: PropTypes.exact({
-    avatar: PropTypes.string.isRequired,
-    username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    stats: PropTypes.exact({
-      followers: PropTypes.number.isRequired,
-      views: PropTypes.number.isRequired,
-      likes: PropTypes.number.isRequired,
-    }),
-  }),
-};
+Profile.propTypes = {avatar: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.exact({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  })};

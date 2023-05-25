@@ -13,9 +13,11 @@ export const FriendListItem = props => {
     </li>
   );
 };
-// FriendListItem.propTypes = PropTypes.exact({
-//     avatar: PropTypes.string.isRequired,
-//     name: PropTypes.string.isRequired,
-//     isOnline: PropTypes.bool.isRequired,
-//     id: PropTypes.number.isRequired,
-//   });
+FriendListItem.propTypes = {
+  props: PropTypes.exact({
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+    id: PropTypes.number.isRequired,
+  }),
+};

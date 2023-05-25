@@ -1,0 +1,29 @@
+.item {
+  margin: 0 auto 8px auto;
+  padding: 24px;
+  width: 360px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+  box-shadow: -5px 2px 18px 4px #ccc;
+  background-color: rgb(252, 253, 255);
+}
+.name {
+  font-size: x-large;
+  font-weight: 500;
+  color: #394550;
+  margin: 16px 0;
+}
+.status {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.online {
+  background-color: green;
+}
+.offline {
+  background-color: red;
+}
